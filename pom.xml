@@ -24,6 +24,7 @@
         <maven.compile.plugin>3.10.0</maven.compile.plugin>
 
         <!-- libraries -->
+        <log4j.version>2.23.1</log4j.version>
         <lombok.version>1.18.22</lombok.version>
 
         <!-- tests -->
@@ -67,6 +68,16 @@
 
     <dependencies>
         <!-- libraries -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
